@@ -50,7 +50,7 @@ const Login = () => {
     <input onChange={changeHandler} value={input.email} name='email' type='email' placeholder='Email' className='border coredder-gray-400 rounded-md px-2 py-1' />
     <input onChange={changeHandler} value={input.password} name='password' type='password' placeholder='Password' className='border coredder-gray-400 rounded-md px-2 py-1' />    
     <button type='submit' className='bg-gray-800 p-2 text-white my-2 rounded-md'>Login</button> 
-    <p>Already have an Account? <Link to={"/login"} className='text-blue-600'>Login</Link> </p> 
+    <p>Doesn't have an Account? <Link to={"/signup"} className='text-blue-600'>Signup</Link> </p> 
       </form>
     </div>
   )
