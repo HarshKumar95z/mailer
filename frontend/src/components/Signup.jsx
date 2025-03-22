@@ -44,7 +44,7 @@ const Signup = () => {
     <input onChange={changeHandler} value={input.email} name='email' type='email' placeholder='Email' className='border coredder-gray-400 rounded-md px-2 py-1' />
     <input onChange={changeHandler} value={input.password} name='password' type='password' placeholder='Password' className='border coredder-gray-400 rounded-md px-2 py-1' />    
     <button type='submit' className='bg-gray-800 p-2 text-white my-2 rounded-md'>Signup</button>
-    <p>Don't have an Account? <Link to={"/signup"} className='text-blue-600'>Signup</Link> </p>
+    <p>Already have an Account? <Link to={"/login"} className='text-blue-600'>Login</Link> </p>
     </form>
     </div>
   )
