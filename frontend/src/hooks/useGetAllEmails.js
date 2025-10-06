@@ -9,7 +9,7 @@ const useGetAllEmails = () => {
     useEffect(()=>{
         const fetchEmails = async () => {
             try {
-                const res = await axios.get("http://localhost:8080/api/v1/email/getallemails", {
+                const res = await axios.get("https://mailer-o6r5.onrender.com/api/v1/email/getallemails", {
                     withCredentials:true
                 });
                 console.log(res.data.emails);

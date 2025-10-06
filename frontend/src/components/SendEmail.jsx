@@ -28,7 +28,7 @@ const SendEmail = () => {
         }
 
         try {
-            const res = await axios.post("http://localhost:8080/api/v1/email/create", formData, {
+            const res = await axios.post("https://mailer-o6r5.onrender.com/api/v1/email/create", formData, {
                 headers: {
                     'Content-Type': "application/json"
                 },
@@ -141,7 +141,7 @@ export default SendEmail;
 //     const submitHandler = async (e) =>{
 //         e.preventDefault();
 //         try {
-//             const res = await axios.post("http://localhost:8080/api/v1/email/create", formData, {
+//             const res = await axios.post("https://mailer-o6r5.onrender.com/api/v1/email/create", formData, {
 //                 headers:{
 //                     'Content-Type':"application/json"
 //                 },

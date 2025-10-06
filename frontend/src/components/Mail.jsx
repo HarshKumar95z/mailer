@@ -14,7 +14,7 @@ const Mail = () => {
     const params = useParams();
     const deleteHandler = async () => {
         try {
-            const res = await axios.delete(`http://localhost:8080/api/v1/email/${params.id}`, {withCredentials:true});
+            const res = await axios.delete(`https://mailer-o6r5.onrender.com/api/v1/email/${params.id}`, {withCredentials:true});
             toast.success(res.data.message);
             navigate("/")
         } catch (error) {
